@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cat banner
+exec 2>/dev/null
+timeout -k1 20 stdbuf -i0 -o0 -e0 /service
